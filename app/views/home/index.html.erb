@@ -1,0 +1,528 @@
+<!-- Jumbotron -->
+
+<div id="hello" class="jumbotron">
+  <div class="container">
+    <h1 class="raleway">panashe mahachi</h1>
+    <p class="lead">hacker and entrepreneur | 
+      <a href="http://twitter.com/panashemahachi" target="_blank">twitter</a> &nbsp;| 
+      <a href="http://linkedin.com/in/pmahachi" target="_blank">linkedin</a>&nbsp;|
+      <a href="https://github.com/panashemahachi" target="_blank">github</a></p>     
+      <div class="row">
+       <div id="ruby" class="animated wiggle col-xs-2">
+        <a href="#About"> <%= image_tag "ruby.png", :class => "img-responsive" %></a>
+
+      </div>
+
+      <!-- Laptop -->
+      <div id="g-site2" class="col-xs-8">
+        <div class="demo-container">
+          <div class="mac img-responsive">
+          <%= image_tag "macbook-flat.png", :class => "img-responsive" %>
+            <div class="screen">
+              <%= image_tag "hack.png", :class => "img-responsive" %>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end Laptop -->
+
+      <div id="ruby" class="animated wiggle col-xs-2">
+<%= image_tag "coffee-icon.png", :class => "img-responsive" %> 
+     </div>
+      <%= image_tag "desk.png", :class => "image-responsive desk" %>
+    </div> 
+  </div>  
+</div> <!-- end Jumobotron -->
+
+<!-- About Me -->
+<div id="About">
+  <div class="container" id="wrap"><!--wrap is for blur effect-->
+    <h2 class="anchor">about me</h2>
+    <div class="row">
+      <div class="col-md-4">
+      <%= image_tag "speaking.jpg", :class => "img-responsive", :id => "bounce", :style => "width:100%; height:100%; padding:0px" %> 
+      </div>
+      <div class="col-md-8">
+        <p>My name is Panashe Mahachi and I am a first year Computer Science student at the University of Waterloo.</p>
+        <p>As a product of the very entrepreneurial Waterloo Region, I constantly look for opportunities to create or contribute to interesting and meaningful projects. I have <a href="#Skills">technical skills</a> as well as valuable soft skills that enable me to take on various roles when trying to
+          take on a challenge.</p>
+          <p>I'm passionate about learning technology, productivity and social problems.</p>
+          <p>In my spare time I love reading finance/technology related articles, working on projects and watching fireside chats.</p>
+          <p>To get to know me more in-depth, please read through my <a href="//pmahachi.com/blog" target="_blank">blog</a>. </p>
+        </div>
+      </div>  
+      <hr class="hr-style" id="hr-bit">
+    </div>
+  </div> <!-- Close About -->
+
+  <!-- Skills -->
+  <div id="Skills">
+    <div class="container" id="wrap"><!--wrap is for blur effect-->
+      <h2 class="anchor">skills</h2>
+
+      <!-- Languages -->
+      <div class="row well">
+        <div class="col-md-4">
+          <h5>Programming Lanuages</h5>
+        </div>
+        <div class="col-md-8">
+          <p>Java, Ruby, Racket, Python, JavaScript, HTML/CSS</p>
+        </div>
+      </div> <!-- end Languages -->
+
+      <!-- Platforms -->
+      <div class="row well">
+        <div class="col-md-4">
+          <h5>Platforms and Frameworks</h5>
+        </div>
+        <div class="col-md-8">
+          <p>Android, Windows, Ruby on Rails, Bootstrap, Wordpress</p>
+        </div>
+      </div> <!-- end Platforms -->
+
+      <center> <p>would you say "design" is one of my skills?</p>
+        <div class="btn-group" role="group" aria-label="Design" >
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#design">Yesssss</button>
+          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#design">Nah man</button>
+        </div>
+      </center>     
+      <hr class="hr-style" id="hr-python">
+    </div>
+  </div> <!-- end Skills-->
+
+  <!-- Portfolio -->
+  <div class="container" id="Portfolio">
+    <div id="wrap">
+      <h2 class="anchor">portfolio</h2>
+      <h3><center>personal projects</center></h3>
+
+      <!-- Bitcoin Hub -->
+      <div class="row well">
+        <div class="col-md-4 project-btc" data-toggle="modal" data-target="#bitcoinhub" >
+          <a class="pull-left" >
+          <%= image_tag "bitcoinhub.png", :class => "media-object dp img-responsive", :style => "height:100%; width:100%" %> 
+          </a>
+        </div>
+        <!-- Bitcoin Hub Description -->
+        <div class="col-md-8">
+          <div class="media">          
+            <div class="media-body">
+              <h3 class="media-heading">Bitcoin Hub <small> Android App</small></h3>
+              <p>Bitcoin Hub is an Android widget that has the current bitcoin price from many exchanges and a live chart.
+                I created this app because I wanted to track the price of bitcoin on-the-go and get up-to-the-second updates in
+                a convenient manner.</p>
+                <hr style="margin:8px auto">
+                Skills Developed/Utilized: &nbsp;<span class="label label-default ">Java</span>
+                <span class="label label-default ">Android</span>
+                &nbsp;Key Links: &nbsp;<a href="https://github.com/panashemahachi/Bitcoin-Hub"><span class="label label-default ">Github</span></a>
+                <a href="https://play.google.com/store/apps/details?id=com.pmahachi.btcprice"><span class="label label-default ">PlayStore</span></a>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end Bitcoin Hub -->
+      </div><!-- End Wrap -->
+
+      <!-- Top Prospect -->
+      <div class="row well">
+        <div class="col-md-4 project-topprospect">
+          <a class="pull-left" href="#topprospect">
+          <%= image_tag "topprospect.jpg", :class => "media-object dp img-responsive", :style => "height:100%; width:100%" %> 
+          </a>
+        </div>
+        <!-- Top Prospect Description -->
+        <div class="col-md-8">
+          <div class="media">        
+            <div class="media-body">
+              <h3 class="media-heading">I AM A TOP PROSPECT <small> Web Application</small></h3>
+              <p>I AM A TOP PROSPECT was an online platform I created when I was 16 to connect high school
+               athletes to top tier trainers and certified nutritionists. Signed numerous trainers and nutritionists onto
+               the platform and garnered interest from some of the top basketball institutions in the world.</p>
+               <hr style="margin:8px auto">
+               Skills Developed/Utilized: &nbsp;<span class="label label-default ">HTML/CSS</span>
+               <span class="label label-default ">PHP</span>
+             </div>
+           </div>
+         </div>
+       </div> <!-- end Top Prospect -->
+
+       <!-- Show more -->
+       <div class="row show-more">            
+        <center><button type="button" data-toggle="modal" data-target="#bitcoin" class="btn btn-primary">View More</button></center>
+      </div>
+
+      <!-- Organizations -->
+      <h3><center>organizations I've been a part of</center></h3>
+      <hr>
+      <!-- Apprentice -->
+      <div class="row well">
+        <div class="col-md-4 project-apprentice">
+          <a class="pull-left" href="#apprentice">
+          <%= image_tag "apprentice.png", :class => "img-responsive media-object dp", :style => "height:100%; width:100%" %> 
+          </a>
+        </div>
+        <!-- Apprentice Description -->
+        <div class="col-md-8">
+          <div class="media">       
+            <div class="media-body">
+              <h3 class="media-heading">UW Apprentice<small> (Director of Web Development)</small></h3>
+              <p>Designed a backend scoring system that gathered delegate feedback, scoring and competition results.  The
+                system gathered the data and presented it in detailed graphs for each delegate to see in their personal dashboard.
+                (<a href="#apprentice">Read More</a>)</p>
+                <hr style="margin:8px auto">
+                Skills Developed/Utilized: &nbsp;<span class="label label-default ">HTML/CSS</span>
+                <span class="label label-default ">PHP</span>
+                <span class="label label-default ">Wordpress</span>
+                Key Links:
+                <a href="https://uwapprentice.ca"><span class="label label-default ">Club Website</span></a>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end Apprentice -->
+
+        <!-- D2L -->
+        <div class="row well">
+          <div class="col-md-4 project-d2l">
+            <a class="pull-left" href="#d2l">
+            <%= image_tag "d2l.png", :class => "img-responsive media-object dp", :style => "height:100%; width:100%" %> 
+            </a>
+          </div>
+          <!-- D2L Description -->
+          <div class="col-md-8">
+            <div class="media">
+              <div class="media-body">
+                <h3 class="media-heading">Desire2Learn<small> (Client Marketing Assistant)</small></h3>
+                <p>At Desire2Learn I started as a high school intern and later became a full time summer employee. 
+                  In this role I worked formally on the client side, but also collaborated with the events and
+                  data marketing departments to...(<a href="#d2l">Read More</a>)</p>
+                  <hr style="margin:8px auto">
+                  Skills Developed/Utilized: &nbsp;<span class="label label-default ">Public Speaking</span>
+                  <span class="label label-default ">Excel Macros</span> 
+                  <span class="label label-default ">Advanced Excel Functions</span> 
+                </div>
+              </div>
+            </div>
+          </div> <!-- end D2L -->
+
+          <!-- Others -->
+          <div class="row show-more"> 
+           <center><button type="button" data-toggle="modal" data-target="#ja" class="btn btn-primary">View More</button></center>
+         </div>
+         <hr class="hr-style" id="hr-android">
+       </div> <!-- End Portfolio -->
+
+       <!-- Interesting Facts -->
+       <div class="container">
+        <center><h3>interesting facts</h3></center>
+
+        <!-- Carousel -->
+        <section id="carousel">           
+          <div class="row well">
+            <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+              <!-- Carousel indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+              </ol>
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                <div class="active item">
+                  <div class="col-md-12"> 
+                    <p>Recently I've only been listening to "Tycho" during coding sessions.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="col-md-12"> 
+                    <p>I love to watch fireside chats and read articles from Business Insider and Hacker News.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="col-md-12"> 
+                    <p>When I was younger I wanted to be in the NFL.</p>
+                  </div>
+                </div>
+              </div><!-- end Carousel Items -->
+            </div>              
+          </div>
+        </section> <!-- end Carousel -->
+        <hr class="hr-style" id="hr-js">
+      </div> <!-- end Interesting Facts -->
+
+
+      <!-- Contact Me -->
+      <div id="contactme">
+        <div class="container" id="wrap"><!-- wrap is for blur effect -->
+          <h2 class="anchor">contact me</h2>
+
+          <p>Wanna grab a coffee or team up for a project? Don't hesitate to ask,
+            shoot me a message and I'll get back to you as soon as I can.</p>
+
+            <!-- Contact Form --> 
+            <form role="form" action="../email/mailer.php" method="post" >
+              <div class="col-lg-12"> 
+                <div class="form-group">
+                  <label for="InputName">Your Name</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" name="InputName" id="InputName" placeholder=
+                    "Enter your name here..." required>
+                    <span class="input-group-addon" style="background-color:#7f8c8d;"></span></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="InputEmail">Your Email</label>
+                    <div class="input-group">
+                      <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder=
+                      "Enter your email here..." required  >
+                      <span class="input-group-addon" style="background-color:#7f8c8d;"></span></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="InputMessage">Message</label>
+                      <div class="input-group">
+                        <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder=
+                        "Hi Panashe," required></textarea>
+                        <span class="input-group-addon well" style="background-color:#7f8c8d;"></span></div>
+                      </div>
+                      <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-default btn-outline pull-right">
+                    </div>
+                  </form> <!-- end Form -->
+                </div>
+              </div><!-- end Contact Me -->
+
+
+                    <!-- Modals -->
+                    <!-- D2L -->
+                    <div class="modal fade" id="d2l" role="dialog">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h3>Desire2Learn (D2L)</h3>
+                          </div>
+                          <div class="modal-body">
+                            <h4>Role: Client Marketing Assistant</h4>
+                            <p>At Desire2Learn I started as a high school intern and later became a full time summer employee. </p>
+                            <p>In this role I worked formally on the client side, but also collaborated with the events and
+                              data marketing departments to:</p>
+                              <p>&bull; Analyze event outcomes for IGNITE User Forums and FUSION 13</p>
+                              <p>&bull; Clean up and maintain client data in the CRM to enable personalized marketing</p>
+                              <p>&bull; Transcribe videos to generate quotes for promotional use</p>
+                              <h4>Skills Developed and Utilized:</h4>
+                              <p>&bull; Presentation skills</p>
+                              <p>&bull; Microsoft Excel (Pivot Tables and Advanced Functions)</p>
+                              <p>&bull; Microsoft CRM</p>
+                              <p>&bull; Managing Client Data</p>
+                              <h4><font color = "DarkOrange">Linkedin Recommendation:</font></h4>
+                              <blockquote>Panashe is an incredible individual. He is talented beyond his years. Panashe has excellent
+                                ideas and is always thinking of new and creative problem
+                                solving solutions. He is a great team player and a true pleasure to be around. Panashe will be a huge success
+                                as he develops his career. - Stephanie Hector
+                                (Indirect Manager and Event Planner)
+                              </blockquote>
+                            </div>
+                            <div class="modal-footer">
+                              <a class="btn btn-default btn-outline" data-dismiss="modal">Close</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <!-- end D2L Modal -->
+
+                      <!-- Communitech -->
+                      <div class="modal fade" id="communitech" role="dialog">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                              <h3>Communitech</h3>
+                            </div>
+                            <div class="modal-body">
+                              <h4>Role: General Member</h4>
+                              <p>Joined the Communitech Venture Services Group at the age of 16 to help aid the growth of my start up
+                                &quot;I AM A TOP PROSPECT&quot;. As I member I routinely met
+                                up with a consultant to bounce ideas off of, and to get connections to help my start up.</p>
+                              </div>       
+                              <div class="modal-footer">
+                                <a class="btn btn-default btn-outline" data-dismiss="modal">Close</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div> <!-- end Communitech Modal -->
+
+                        <!-- Junior Achievement -->
+                        <div class="modal fade" id="ja" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h3>Junior Achievement</h3>
+                              </div>
+                              <div class="modal-body">
+                                <h4>Role: President</h4>
+                                <p>At Junior Achievement I served as President of a company that produced all natural beauty products.
+                                  In this role I was responsible for leading a diverse group of individuals with the goal of
+                                  accomplishing our mission statement.</p>
+                                  <h4>Skills Developed and Utilized:</h4>
+                                  <p>&bull; Management skills (specifically how to deal deal with low-morale and motivate 
+                                    people in uncertain environments)</p>
+                                    <p>&bull; Financial Analysis</p>
+                                    <p>&bull; Sales Skills</p>
+                                    <p>&bull; Presentation Skills</p>
+                                    <h4>Awards:</h4>
+                                    <p>&bull; Selected as one of 120 JA Canada members to attend the &quot;NEXT Generation Leaders Forum&quot;</p>
+                                    <p>&bull; First Year Achiever of The Year </p>
+                                    <p>&bull; Selected as an ambassador to promote JA to potential volunteers/donors</p>
+                                    <%= image_tag "speaking-2.jpg", :class => "img-responsive", :style => "height:500px; width:100px; padding:0px" %> 
+                                    <p>An image of me talking to a crowd at a charity event</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <a class="btn btn-default  btn-outline" data-dismiss="modal">Close</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div> <!-- end JA Modal -->
+
+                            <!-- Bitcoin: 18FLt6CE35xLnarjVq9RjzS1ToepWd3N4f (You know what you gotta do) -->
+                            <div class="modal fade" id="bitcoin" role="dialog">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h3>Bitcoin Trading Algorithm</h3>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>Continually building/backtesting and maintaining a Bitcoin trading algorithm written in Python. 
+                                      The algorithm examines moving averages to try and buy/sell
+                                      Bitcoin with momentum. In addition to that, it buys at price drop falls that seem to indicate a trough
+                                      and sells after a major price increase.</p>
+                                      <h4>Skills Developed and Utilized:</h4>
+                                      <p>&bull; Python</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <a class="btn btn-default btn-outline" data-dismiss="modal">Close</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div> <!-- end Bitcoin modal -->
+
+                              <!-- Bitcoin Hub -->
+                              <div class="modal fade" id="bitcoinhub" role="dialog">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                      <h3>Bitcoin Hub (Android Widget)</h3>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>Bitcoin Hub is an android widget that has the current bitcoin price from many exchanges and a live chart.
+                                        I created this app because I wanted to track the price of bitcoin on-the-go and get up-to-the-second updates in
+                                        a convenient manner.</p>
+                                        <h4>Skills Developed and Utilized:</h4>
+                                        <p>&bull; Java</p>
+                                        <p>&bull; Android SDK</p>
+                                        <p><a href="https://github.com/panashemahachi/Bitcoin-Hub">GitHub Link</a></p>
+                                        <p><a href="https://play.google.com/store/apps/details?id=com.pmahachi.btcprice">Play Store Link</a></p>
+                                        <%= image_tag "btchub2.png", :class => "img-responsive", :style => "height:250px; width:500px" %> 
+                                        <hr>
+                                        <%= image_tag "btchub3.png", :class => "img-responsive", :style => "height:250px; width:500px" %> 
+                                      </div>
+                                      <div class="modal-footer">
+                                        <a class="btn btn-default btn-outline" data-dismiss="modal">Close</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div> <!-- end Bitcoin Hub modal -->
+
+                                <!-- I AM A TOP PROSPECT -->
+                                <div class="modal fade" id="topprospect" role="dialog">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h3>I AM A TOP PROSPECT</h3>
+                                      </div>
+                                      <div class="modal-body">
+                                       <p>&quot;I AM A TOP PROSPECT&quot; was an online platform I created when I was 16 to connect high school
+                                         athletes to top tier trainers and certified nutritionists.</p>
+                                         <p>In this venture I was in charge of all aspects of the company including:</p>
+                                         <p>&bull; Coding the platform using HTML5, PHP and CSS3</p>
+                                         <p>&bull; Recruiting trainers and nutritionists</p>
+                                         <p>&bull; Creating and updating financial records</p>
+                                         <p>I had to cease operations due to uncontrollable factors</p>
+                                         <h4>Skills Developed and Utilized:</h4>
+                                         <p>&bull; Presentation Skills</p>
+                                         <p>&bull; Markup Languages (CSS, HTML)</p>
+                                         <p>&bull; PHP</p>
+                                         <p>&bull; Financial Analysis</p>
+                                         <p>&bull; Sales</p>
+                                         <h4>Highlights:</h4>
+                                         <p>&bull;Signing multiple trainers and nutritionists to the platform</p>
+                                         <p>&bull;Getting interest from investors</p>
+                                         <p>&bull;Getting interest from some of the top basketball institutions in the world</p>
+                                       </div>
+                                       <div class="modal-footer">
+                                        <a class="btn btn-default btn-outline" data-dismiss="modal">Close</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div> <!-- end Top Prospect Modal -->
+
+                                <!-- Wanna -->
+                                <div class="modal fade" id="wanna" role="dialog">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h3>Wanna...</h3>
+                                      </div>
+                                      <div class="modal-body">
+                                        <h4>Project Description:</h4>
+                                        <p>&quot;Wanna...&quot; is an Android app that helps you keep relationships active by sending event
+                                          requests to friends and colleagues you never talk to. The app
+                                          is built on the premise that idle relationships (garnered by having many friends/connections and elapsed time)
+                                          become very weak and don't help your
+                                          personal/professional life.</p>
+                                          <p>&bull; Wanna get a coffee? Why not invite a colleague on your LinkedIn profile you never talk to?</p>
+                                          <p>&bull; Going to watch a movie? Why don't you invite your childhood best friend who you've cut communications with?</p>
+                                          <p>Currently working on the project...</p>
+                                          <h4>Skills Developed and Utilized:</h4>
+                                          <p>&bull; Java</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <a class="btn btn-default btn-outline" data-dismiss="modal">Close</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div> <!-- end Wanna modal -->
+
+                                  <!-- Design -->
+                                  <div class="modal fade" id="design" role="dialog">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                          <h3>Design Feedback</h3>
+                                        </div>
+                                        <div class="modal-body">
+                                          <form role="form" action="../email/mailer-2.php" method="post" >
+                                            <div class="col-lg-12">
+                                             <div class="btn-group" data-toggle="buttons">
+                                              <label class="btn btn-default active">
+                                                <input type="radio" name="inputWalls" id="inputWalls" value="Good" checked>
+                                                Good </label>
+                                                <label class="btn btn-default">
+                                                  <input type="radio" name="inputWalls" id="inputWalls" value="Bad">
+                                                  Bad </label>
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="InputMessage">Panashe, the design for your personal site is...</label>
+                                                  <div class="input-group">
+                                                    <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder=
+                                                    "Good/bad because..." required></textarea>
+                                                    <span class="input-group-addon" style="background-color:#7f8c8d;"></span></div>
+                                                  </div>
+                                                  <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-default btn-outline pull-right">
+                                                </div>
+                                              </form>
+                                              <p>:)</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div> <!-- end Design modal -->
+

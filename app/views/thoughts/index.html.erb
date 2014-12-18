@@ -1,0 +1,27 @@
+<div class="container">
+<h1 style="padding-top:60px">My Thoughts<small>right or wrong </small></h1>
+
+
+    <% @thoughts.each do |thought| %>
+    <div class="row">
+        <h2><%= thought.title %></h2>
+        <p class="lead well well-sm" style="margin:0px;">TLDR: &nbsp;<%= thought.tldr %></p>
+        </div>
+        <div class="row">
+        <p style="margin:0px;"> Category: &nbsp;<span class="badge badge-info" ><%= thought.category %></span></p>
+<hr style="margin:2px;">
+        </div>
+        <div class="row">
+        <p><%= thought.preview %></p>
+                
+      
+        <p><center><%= link_to 'Read More', thought %></center></p>
+        </div>
+        <%= link_to 'Edit', edit_thought_path(thought) %>
+        <%= link_to 'Destroy', thought, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    <% end %>
+</div>
+
+
+
+<%= link_to 'New Thought', new_thought_path %>

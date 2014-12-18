@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<div class="container">
+
+
+
+    <div class="row">
+    <h1 style="padding-top:60px">My Thoughts<small>right or wrong </small></h1>
+        <h2> <%= @thought.title %></h2>
+        <p class="lead well well-sm" style="margin:0px;">TLDR: &nbsp;<%= @thought.tldr %></p>
+        </div>
+        <div class="row">
+        <p style="margin:0px;"> Category: &nbsp;<span class="badge badge-info" ><%= @thought.category %></span></p>
+<hr style="margin:2px;">
+        </div>
+        <div class="row">
+        <p><%= @thought.content %></p>
+                </div>
+
+        <%= link_to 'Edit', edit_thought_path(@thought) %> |
+<%= link_to 'Back', thoughts_path %>
+</div>
+
+

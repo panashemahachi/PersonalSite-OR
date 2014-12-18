@@ -1,0 +1,2 @@
+module StayTunedHelper
+end

@@ -1,0 +1,37 @@
+<%= form_for(@thought) do |f| %>
+  <% if @thought.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@thought.errors.count, "error") %> prohibited this thought from being saved:</h2>
+
+      <ul>
+      <% @thought.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field col-md-12">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field col-md-12">
+    <%= f.label :tldr %><br>
+    <%= f.text_field :tldr %>
+  </div>
+  <div class="field col-md-12">
+    <%= f.label :category %><br>
+    <%= f.text_field :category %>
+  </div>
+  <div class="field col-md-12">
+    <%= f.label :preview %><br>
+    <%= f.text_area :preview %>
+  </div>
+  <div class="field col-md-12 content">
+    <%= f.label :content %><br>
+    <%= f.text_area :content, :cols => "50", :rows =>"15"%>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
